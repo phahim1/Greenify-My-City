@@ -80,27 +80,6 @@ greenify-my-city/
   → Body: `{ city, strategy, result }`  
   → Returns: `{ brief: "<markdown string>" }`
 
----
-
-## 🧪 Quick Test with Postman
-
-```json
-POST http://localhost:8000/generate-brief
-{
-  "city": "Barcelona",
-  "strategy": "Balanced",
-  "result": {
-    "energy_mix": {
-      "solar": 40,
-      "wind": 30,
-      "battery": 20,
-      "grid": 10
-    },
-    "co2_reduction": 1.4,
-    "savings_per_month": 18.0,
-    "geji_score": 0.78
-  }
-}
 
 ---
 
@@ -170,13 +149,21 @@ npm start
 
 ## 🔮 Future Enhancements
 ✅ Migrate to Google ADK to use real agent classes with state, scoring, and cooperation
+
 ✅ GEJI Scoring Enhancements using equity, affordability, and resilience metrics
+
 ✅ Save and retrieve briefs via Firebase or GCP Datastore
+
 ✅ Auto-deploy via Cloud Run / Render
+
 🔜 Blockchain Audit Layer: Record strategy decisions and energy performance metrics on-chain
+
 🔜 Multi-Criteria Decision Analysis (MCDA): Let users weigh cost, equity, resilience
+
 🔜 Nash Equilibrium-Based Strategy Optimization
+
 🔜 City-as-a-PED Simulation (Positive Energy Districts)
+
 🔜 Gamified Citizen Engagement Loop
 
 ---
