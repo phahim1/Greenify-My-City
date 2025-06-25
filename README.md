@@ -102,7 +102,7 @@ POST http://localhost:8000/generate-brief
   }
 }
 
-
+---
 
 ## 👩‍💻 Multi-Agent Advisory System
 
@@ -121,32 +121,37 @@ At the core of the simulation is a multi-agent engine with the following advisor
 
 Each agent provides **structured advice**, which is aggregated into a single Gemini-generated markdown brief.
 
-🧾 .env Setup
+--- 
+
+##🧾 .env Setup
 Create a .env file inside the server/ folder:
 GOOGLE_API_KEY=your_actual_gemini_api_key
 
+---
 
 ## 🖼️ Screenshots
 
 ### Home
-![Home Screenshot](assets/001.jpg)
+![Home Screenshot](https://github.com/phahim1/Greenify-My-City/blob/main/assets/001.jpg)
+
 
 ### City Selection
-![City](assets/002.jpg)
+![City](https://github.com/phahim1/Greenify-My-City/blob/main/assets/002.jpg)
 
 ### Generated Policy Brief
-![Policy Brief 1](assets/003.jpg)
-![Policy Brief 2](assets/004.jpg)
+![Policy Brief 1](https://github.com/phahim1/Greenify-My-City/blob/main/assets/003.jpg)
+![Policy Brief 2](https://github.com/phahim1/Greenify-My-City/blob/main/assets/004.jpg)
 
+---
 
 ## 📄 Sample Output
 
-[📥 Download Sample Gemini Policy Brief (PDF)](assets/Policy.pdf)
+[📥 Download Sample Gemini Policy Brief (PDF)](https://github.com/phahim1/Greenify-My-City/blob/main/assets/Policy.pdf)
 
 
+---
 
-
-📦 Install & Run
+## 📦 Install & Run
 1. Backend (FastAPI)
 
 cd server
@@ -154,14 +159,16 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 
 
+---
 
 2. Frontend (React)
 cd client
 npm install
 npm start
 
+---
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 ✅ Migrate to Google ADK to use real agent classes with state, scoring, and cooperation
 ✅ GEJI Scoring Enhancements using equity, affordability, and resilience metrics
 ✅ Save and retrieve briefs via Firebase or GCP Datastore
@@ -172,6 +179,7 @@ npm start
 🔜 City-as-a-PED Simulation (Positive Energy Districts)
 🔜 Gamified Citizen Engagement Loop
 
+---
 
-📄 License
+##📄 License
 MIT License – Free to use with attribution.
